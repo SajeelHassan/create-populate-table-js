@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10</title>
+</head>
+<style>
+    table, th, td{
+        border: solid 2px #7676fb; 
+        text-align:left; 
+        font-size: 20px;
+    }
+    table{
+        width:900px;
+    }
+    th{
+        font-size: 22px;
+    }
+    thead {
+        color:white;
+        background-color: #0000ff;
+        font-weight:bold;
+    }
+</style>
+<!-- Task 1 - that hard coded table -->
+<body>
+    <table id='codedTable'>
+        
+        <thead>
+                <tr>
+                    <th>Train Name</td>
+                    <th>Dep. Time</td>
+                    <th>Origin</td>
+                    <th>Destination</td>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ALLAMA IQBAL EXPRESS</td>
+                <td>13:15</td>
+                <td>KARACHI CANTT</td>
+                <td>SIALKOT</td>
+            </tr>
+            <tr>
+                <td>AWAM EXPRESS</td>
+                <td>07:45</td>
+                <td>KARACHI CANTT</td>
+                <td>PESHAWAR CANTT</td>
+            </tr>
+            <tr>
+                <td>BAHAUDDIN ZAKRIA EXPRESS</td>
+                <td>18:35</td>
+                <td>KARACHI CITY</td>
+                <td>MULTAN</td>
+            </tr>
+            <tr>
+                <td>BURAQ EXPRESS</td>
+                <td>19:15</td>
+                <td>KARACHI</td>
+                <td>RAWALPINDI</td>
+            </tr>
+            <tr>
+                <td>FAREED EXPRESS</td>
+                <td>19:45</td>
+                <td>KARACHI CITY</td>
+                <td>LAHORE</td>
+            </tr>
+            <tr>
+                <td>KARACHI EXPRESS</td>
+                <td>17:30</td>
+                <td>KARACHI CANTT</td>
+                <td>LAHORE</td>
+            </tr>
+            <tr>
+                <td>KARAKORAM EXPRESS</td>
+                <td>15:30</td>
+                <td>KARACHI CANTT</td>
+                <td>LAHORE</td>
+            </tr>
+            <tr>
+                <td>KHYBER MAIL</td>
+                <td>21:30</td>
+                <td>KARACHI CANTT</td>
+                <td>PESHAWAR CANTT</td>
+            </tr>
+            <tr>
+                <td>MILAT EXP</td>
+                <td>16:15</td>
+                <td>KARACHI CANTT</td>
+                <td>FAISALABAD</td>
+            </tr>
+            <tr>
+                <td>PAKISTAN EXPRESS</td>
+                <td>14:30</td>
+                <td>KARACHI</td>
+                <td>RAWALPINDI</td>
+            </tr>
+            <tr>
+                <td>SWAT EXP</td>
+                <td>16:15</td>
+                <td>KARACHI CANTT</td>
+                <td>FAISALABAD</td>
+            </tr>
+            <tr>
+                <td>LAHORE EXPRESS</td>
+                <td>14:30</td>
+                <td>KARACHI</td>
+                <td>RAWALPINDI</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>New Table</h1>
+    <div id='newTableDiv'>
+        <table id='newTable'>
+            <!-- new table added here using js -->
+        </table>
+    </div>
+    <script src='Schedule.js'></script>
+</body>
+</html>
