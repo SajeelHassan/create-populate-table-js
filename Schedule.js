@@ -9,7 +9,6 @@ function Schedule(tName,dTime,orig,desti) {
 
 //Task 2 - Populating the object array with given data in html
 const codedTable=document.getElementById('codedTable');
-console.log(codedTable);
 var trains=[];
 var data=[];
 for (let i = 0; i < codedTable.rows.length; i++){
@@ -20,10 +19,8 @@ for (let i = 0; i < codedTable.rows.length; i++){
 
 
 //Task 3 - Creating a table from object array - populated in task 2
-
 var row;
 const newTable=document.getElementById('newTable');
-console.log(newTable);
 //creating Table body
 for (let i = 0; i < codedTable.rows.length-1; i++){
     row=newTable.insertRow();
@@ -40,7 +37,6 @@ for (let i = 0; i < codedTable.rows[0].cells.length; i++) {
 }
 
 // populating the newtable with data
-console.log(newTable.rows);
 for (let i = 0; i < newTable.rows.length; i++){
     data=[trains[i].trainName,trains[i].departTime,trains[i].origin,trains[i].destination];
     for (let j = 0; j < newTable.rows[i].cells.length; j++)
